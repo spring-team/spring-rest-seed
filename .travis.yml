@@ -1,0 +1,24 @@
+language: java
+install: true
+script: bash src/main/scripts/travis-build.sh
+jdk:
+- oraclejdk8
+env:
+  global:
+  - secure: QNDTupThv37NjYDRcz3+dmO33a3e6c4rWIKsTdStf6DfgxxPQ+CfEW9OraiRwECIE32SjjZ00U+xixGCKl+Jn0t7HVgQiXNPgmbWsb+ywCNVzk0XhX+4NqT7u5BeSGPB+fctAvrFQGxVKjSSI4E7Zj6AdOucHPfK1Xz10IvDg41BG/Jwxbg0EioIdNj6TPEVOibBDWg5EGmCZ9o0n3rPsRjH+b7TDr8Wc06OyXGOT9leiESNXbK3pi0GNdtHqwd9O6D5G/PFyTB23XRLrS2K4GhqXy0LeGBO9ysrbgZeLekMrQJmZMFBlOSh3qFWSv/ybQyeIyYV/o/Z4Y8/Y2P5tL8fI2B0cFFvggTmCTRmNu4K998p8M/T+nLQMCJyiLBIO8QL8k/zmqJhmmeZJeNHyYuE8Xn1ZEoajMQ30m/rMHbTLr09LJs9W6lk8vqjUtrVsK+lyzmc/AaujGqU5ATXFDNU/s9+hIY93Pn51ynjCQX0euowFnWi4Y5fHgRgSFnXWXYss3TVPh6sPKNnolXOKPta4FYhuq07CRGyziGAHIbf2Ppr2gFH4XxVKDeet9nwbZclgfl5Vty7QgAIkl8DFjMU9VtNE2WPJZBUpn0SVp/41IMR+20Xq+02r6j71J0JdEeSfWfsXF04lLcDcmh9pc9VV1v6YccQfSrz/ElvTQY=
+notifications:
+  email: false
+  webhooks:
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_error: always
+    on_cancel: always
+    urls:
+    - https://webhook.atomist.com/travis
+cache:
+  directories:
+  - $HOME/.m2
+branches:
+  except:
+  - /^v?\d+\.\d+\.\d+/

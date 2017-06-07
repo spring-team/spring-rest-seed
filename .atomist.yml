@@ -1,0 +1,20 @@
+---
+kind: "operation"
+client: "atomist-bot"
+generator:
+  name: "NewSpringBootRestService"
+  group: "atomist"
+  artifact: "spring-rugs"
+  version: "0.12.0"
+  origin:
+    repo: "https://github.com/atomist/spring-rugs.git"
+    branch: "6b9204311de6e06c390e9feddbeb413f57fa32c4"
+    sha: "6b92043"
+  parameters:
+    - "artifactId": "spring-rest-seed"
+    - "groupId": "com.atomist.seeds"
+    - "version": "0.1.0-SNAPSHOT"
+    - "description": "Seed for creating Spring REST services"
+    - "rootPackage": "com.atomist.springteam"
+    - "serviceClassName": "Seed"
+
