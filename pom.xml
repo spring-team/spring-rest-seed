@@ -20,13 +20,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
     </properties>
     <dependencies>
-	    
-	    <!-- JUST FOR CASCADE -->
-	 <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>4.2.4.RELEASE</version>
-</dependency>
+	
    
 	    
         <dependency>
