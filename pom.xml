@@ -38,6 +38,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Atomist agent -->
+		<dependency>
+      <groupId>com.atomist</groupId>
+      <artifactId>spring-boot-agent</artifactId>
+      <version>[0.1.5,1.0.0)</version>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -46,11 +53,29 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+		     <groupId>pl.project13.maven</groupId>
+		     <artifactId>git-commit-id-plugin</artifactId>
+		     <configuration>
+		         <verbose>false</verbose>
+		     </configuration>
+	 	 </plugin>
 		</plugins>
 	</build>
 
 
 	<repositories>
+
+		<repository>
+        <id>public-atomist-release</id>
+        <name>Atomist Release</name>
+        <url>https://atomist.jfrog.io/atomist/libs-release</url>
+           <snapshots>
+              <enabled>false</enabled>
+           </snapshots>
+    </repository>
+		
 	<repository>
     <id>demo-atomist-release</id>
     <name>Atomist Demo Release</name>
