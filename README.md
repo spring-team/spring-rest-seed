@@ -1,7 +1,5 @@
 # spring-rest-seed
 
-[![Build Status](https://travis-ci.org/spring-team/spring-rest-seed.svg?branch=master)](https://travis-ci.org/spring-team/spring-rest-seed)
-
 This project contains an Atomist seed project.
 
 ## Development
