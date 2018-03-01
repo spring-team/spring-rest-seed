@@ -1,6 +1,17 @@
 # spring-rest-seed
 
-This project contains an Atomist seed project.
+This project contains an Atomist seed project for a Spring Boot REST service.
+You can edit this project freely, with Atomist generators capable of
+turning it into a clean, customized project.
+
+This project builds and runs. To run it, type
+
+```
+$ ./mvnw spring-boot:run -DATOMIST_TEAM=<your Atomist team id>
+
+```
+The environment variable for your Atomist team id is not necessary for
+projects generated from this seed, which will have had the team put in.
 
 ## Development
 
@@ -14,11 +25,12 @@ You can run the service locally using the following from the command:
 
 ```
 $ ./mvnw spring-boot:run
+
 ```
 
 ### Run tests
 
-This service comes with some rudimentary tests as a good starting
+This service comes with some basic tests as a good starting
 point for writing your own.  Use the following command to execute the
 tests using Maven:
 
