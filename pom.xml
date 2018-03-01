@@ -63,33 +63,7 @@
             <enabled>false</enabled>
          </snapshots>
       </repository>
-      <repository>
-         <id>demo-atomist-release</id>
-         <name>Atomist Demo Release</name>
-         <url>https://atomist.jfrog.io/atomist/libs-release-demo</url>
-         <snapshots>
-            <enabled>false</enabled>
-         </snapshots>
-      </repository>
-      <repository>
-         <id>demo-atomist-snapshot</id>
-         <name>Atomist Demo Snapshot</name>
-         <url>https://atomist.jfrog.io/atomist/libs-snapshot-demo</url>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
    </repositories>
    <distributionManagement>
-      <repository>
-         <id>demo-atomist-release</id>
-         <name>Atomist Demo Release</name>
-         <url>https://atomist.jfrog.io/atomist/libs-release-demo</url>
-      </repository>
-      <snapshotRepository>
-         <id>demo-atomist-snapshot</id>
-         <name>Atomist Demo Snapshot</name>
-         <url>https://atomist.jfrog.io/atomist/libs-snapshot-demo</url>
-      </snapshotRepository>
    </distributionManagement>
 </project>
