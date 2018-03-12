@@ -7,5 +7,5 @@ atomist:
   debug: true
   url: 'https://webhook.atomist.com/atomist/application/teams/${ATOMIST_TEAM}'
   environment:
-      domain: '${ATOMIST_ENVIRONMENT:development}'
+      domain: '${ATOMIST_ENVIRONMENT:${vcap.application.space_name:development}}'
       pod: '${HOSTNAME:${random.value}}'
