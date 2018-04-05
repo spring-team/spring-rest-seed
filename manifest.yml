@@ -1,0 +1,8 @@
+---
+applications:
+- name: "spring-rest-seed"
+  memory: 1024M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  env:
+    ATOMIST_TEAM: T5964N9B7
