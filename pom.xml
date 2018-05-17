@@ -65,5 +65,15 @@
       </repository>
    </repositories>
    <distributionManagement>
-   </distributionManagement>
+      <repository>
+        <id>demo-atomist-release</id>
+        <name>Atomist Release</name>
+        <url>https://atomist.jfrog.io/atomist/libs-release-demo</url>
+      </repository>
+      <snapshotRepository>
+        <id>demo-atomist-snapshot</id>
+        <name>Atomist Snapshots</name>
+        <url>https://atomist.jfrog.io/atomist/libs-snapshot-demo</url>
+      </snapshotRepository>
+    </distributionManagement>
 </project>
