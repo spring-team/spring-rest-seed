@@ -68,8 +68,8 @@
                             <contextUrl>{{ARTIFACTORY_URL}}</contextUrl>
                             <username>{{ARTIFACTORY_USER}}</username>
                             <password>{{ARTIFACTORY_TOKEN}}</password>
-                            <repoKey>libs-release-local</repoKey>
-                            <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                            <repoKey>{{ARTIFACTORY_REPO}}</repoKey>
+                            <snapshotRepoKey>{{ARTIFACTORY_REPO}}</snapshotRepoKey>
                         </publisher>
                     </configuration>
                 </execution>
