@@ -27,7 +27,7 @@ class SpringRestSeedController {
 
     @RequestMapping(method = GET, path = "/")
     public String root() {
-        return "Spring Boot REST service running in San Francisco at 11:29 " + getClass().getName();
+        return "Spring Boot REST service running in San Francisco at 8:42 am " + getClass().getName();
     }
 
     @RequestMapping(method = GET, path = "hello/{name}")
