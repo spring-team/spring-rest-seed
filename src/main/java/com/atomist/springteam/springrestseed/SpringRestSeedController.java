@@ -22,12 +22,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
+/**
+ * This is the entry point for our hello route
+*/
 @RestController
 class SpringRestSeedController {
 
     @RequestMapping(method = GET, path = "/")
     public String root() {
-        return "Spring Boot REST service running in San Francisco at 8:42 am " + getClass().getName();
+        return "Spring Boot REST service running in Sydney at 8:48 am " + getClass().getName();
     }
 
     @RequestMapping(method = GET, path = "hello/{name}")
