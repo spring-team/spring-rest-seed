@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0 
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -24,18 +24,19 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 /**
  * This is the entry point for our hello route
-*/
+ */
 @RestController
 class SpringRestSeedController {
 
-    @RequestMapping(method = GET, path = "/")
-    public String root() {
-        return "Spring Boot REST service running over the Pacific Ocean " + getClass().getName();
-    }
+	@RequestMapping(method = GET, path = "/")
+	public String root() {
+		return "Spring Boot REST service running over the Pacific Ocean "
+				+ getClass().getName();
+	}
 
-    @RequestMapping(method = GET, path = "hello/{name}")
-    public String person(@PathVariable String name) {
-        return "Hello " + name + "!";
-    }
+	@RequestMapping(method = GET, path = "hello/{name}")
+	public String person(@PathVariable String name) {
+		return "Hello " + name + "!";
+	}
 
 }
