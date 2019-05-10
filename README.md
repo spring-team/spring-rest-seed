@@ -1,6 +1,6 @@
 # spring-rest-seed
 
-This project contains an Atomist seed project for a Spring Boot REST service.
+This is an Atomist seed project for a Spring Boot REST service.
 You can edit this project freely, with Atomist generators capable of
 turning it into a clean, customized project.
 
