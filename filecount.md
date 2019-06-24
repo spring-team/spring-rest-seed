@@ -1,1 +1,1 @@
-There are 10 files in this project
+The number of files in this project is 11
